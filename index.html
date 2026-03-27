@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Oven Atelier - Japanese Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🏡 HEADER (ROOF) -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">🍞 Little Oven Atelier</h1>
+            <p class="tagline">温かい手作りパン</p>
+        </div>
+        <div class="roof"></div>
+    </header>
+
+    <!-- 🏗️ MAIN LAYOUT -->
+    <div class="container">
+        <!-- 📌 SIDEBAR -->
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <button class="nav-btn active" data-tab="fresh">
+                    🌸 Fresh
+                </button>
+                <button class="nav-btn" data-tab="commission">
+                    ✨ Commission
+                </button>
+                <button class="nav-btn" data-tab="adoptable">
+                    💝 Adoptable
+                </button>
+                <button class="nav-btn" data-tab="about">
+                    📖 About
+                </button>
+            </nav>
+        </aside>
+
+        <!-- 📺 MAIN CONTENT -->
+        <main class="main-content">
+            <!-- 🎌 CURTAIN CATEGORY SYSTEM -->
+            <div class="curtain-container">
+                <div class="curtain-wrapper">
+                    <div class="curtain-track">
+                        <!-- Items will be dynamically inserted here -->
+                    </div>
+                    <button class="curtain-nav prev-btn" id="prevBtn">❮</button>
+                    <button class="curtain-nav next-btn" id="nextBtn">❯</button>
+                </div>
+            </div>
+
+            <!-- 📋 TAB CONTENT -->
+            <div class="content-area">
+                <!-- FRESH TAB -->
+                <section id="fresh" class="tab-content active">
+                    <h2>Fresh Breads</h2>
+                    <p class="placeholder">🍞 Placeholder - Fresh Breads Content</p>
+                </section>
+
+                <!-- COMMISSION TAB -->
+                <section id="commission" class="tab-content">
+                    <h2>Commission</h2>
+                    <p class="placeholder">✨ Placeholder - Commission Content</p>
+                </section>
+
+                <!-- ADOPTABLE TAB -->
+                <section id="adoptable" class="tab-content">
+                    <h2>Adoptable Artworks</h2>
+                    <div class="card-grid" id="cardGrid">
+                        <!-- Cards will be dynamically inserted here -->
+                    </div>
+                </section>
+
+                <!-- ABOUT TAB -->
+                <section id="about" class="tab-content">
+                    <h2>About Us</h2>
+                    <p class="placeholder">📖 Placeholder - About Content</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
